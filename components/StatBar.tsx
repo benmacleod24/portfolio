@@ -33,7 +33,12 @@ const StatBar: React.SFC<StatBarProps> = ({
   return (
     <Flex flexDir="column">
       <Flex
-        width={[`${width / 2}px`, `${width / 2}px`, `${width}px`, `${width}px`]}
+        width={[
+          `${width / 2.7}px`,
+          `${width / 2}px`,
+          `${width}px`,
+          `${width}px`,
+        ]}
         background="#1F2937"
         borderRadius="full"
         overflow="hidden"
@@ -45,7 +50,7 @@ const StatBar: React.SFC<StatBarProps> = ({
       >
         <Flex
           width={[
-            `${value * (width / 2)}px`,
+            `${value * (width / 2.7)}px`,
             `${value * (width / 2)}px`,
             `${value * width}px`,
             `${value * width}px`,
