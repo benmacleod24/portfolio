@@ -20,6 +20,7 @@ const About: React.SFC<AboutProps> = ({}) => {
         top="-11%"
         left="-50%"
         pointerEvents="none"
+        alt="blob"
       />
       <Flex
         borderRadius="lg"
@@ -41,15 +42,15 @@ const About: React.SFC<AboutProps> = ({}) => {
           background="linear-gradient(45deg, #f1a7f1, #fad0c4);"
           backgroundClip="text"
         >
-          Hello, I'm Ben Macleod!{" "}
+          Hello, Im Ben Macleod!
         </Text>
         <Text maxWidth="75%" color="gray.400" lineHeight="1.3">
           I have been a web developer for nearly 2 years. During those two years
           I taught myself how to develop my web applications in multiple
           different frameworks & methods. During all this experiences I found
           the most interest and efficency in working with React JS coupled with
-          typescript. I don't spend all my time developing; I enjoy surfing,
-          spending time on the water, and I can't forget golfing. I tend to find
+          typescript. I dont spend all my time developing; I enjoy surfing,
+          spending time on the water, and I cant forget golfing. I tend to find
           more ideas and inspiration for my projects when I step away from my
           computer.
         </Text>
