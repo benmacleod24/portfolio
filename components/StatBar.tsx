@@ -23,7 +23,7 @@ const StatBar: React.SFC<StatBarProps> = ({
 
     if (stopValue <= 0.5) return setLevel("Beginner");
     if (stopValue <= 0.8) return setLevel("Proficient");
-    if (stopValue <= 1.0) return setLevel("Expert");
+    if (stopValue <= 1.0) return setLevel("Inside & Out");
   }, []);
 
   React.useEffect(() => {

@@ -1,4 +1,5 @@
 import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+import emailjs from "emailjs-com";
 import * as React from "react";
 
 export interface HeaderProps {}
@@ -24,6 +25,23 @@ const Header: React.SFC<HeaderProps> = ({}) => {
 
     return () => {};
   }, [changeHeader]);
+
+  const testEmail = () => {
+    emailjs
+      .send(
+        "service_o0lcnjg",
+        "template_bi4gdmm",
+        {
+          subject: "Job Offer",
+          from_name: "Intel Corp.",
+          from_email: "intel@jobs.com",
+          reply_to: "benmacleod24@icloud.com",
+          message: "I saw your portfolio",
+        },
+        "user_WTaSWNG4xevHBW0BYVNd2"
+      )
+      .then((res) => console.log(res));
+  };
 
   return (
     <Flex
@@ -108,12 +126,27 @@ const Header: React.SFC<HeaderProps> = ({}) => {
           variant="ghost"
           borderRadius="full"
           transition="color 0.2s ease-in-out"
+          mr="2"
           _hover={{
             background: "linear-gradient(65deg, #3eadcf, #abe9cd)",
             color: "gray.800",
           }}
         >
           Skills & Languages
+        </Button>
+        <Button
+          onClick={() => scrollToElement("projects")}
+          fontWeight="normal"
+          size="sm"
+          variant="ghost"
+          borderRadius="full"
+          transition="color 0.2s ease-in-out"
+          _hover={{
+            background: "linear-gradient(65deg, #ED4264, #ED4264)",
+            // color: "gray.800",
+          }}
+        >
+          My Projects
         </Button>
       </Flex>
     </Flex>

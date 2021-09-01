@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HomePage from "../components/Home";
 import About from "../components/About";
+import Projects from "../components/Projects";
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
         <HomePage />
         <About />
         <MySkills />
+        <Projects />
       </Flex>
       <Footer />
     </div>
