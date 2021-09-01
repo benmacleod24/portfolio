@@ -13,7 +13,7 @@ const About: React.SFC<AboutProps> = ({}) => {
       pos="relative"
       zIndex={1}
       //   background="red"
-      mb={["32", "0", "0", "0"]}
+      mb={["80", "72", "44", "28", "0"]}
     >
       <Image
         src="https://i.imgur.com/ZQYrr1s.png"
@@ -46,7 +46,7 @@ const About: React.SFC<AboutProps> = ({}) => {
           Hello, Im Ben Macleod!
         </Text>
         <Text
-          maxWidth={["100%", "100%", "75%", "75%"]}
+          maxWidth={["100%", "100%", "100%", "100%", "75%", "75%"]}
           color="gray.400"
           lineHeight="1.3"
         >

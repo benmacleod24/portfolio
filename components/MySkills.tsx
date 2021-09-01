@@ -33,7 +33,7 @@ const MySkills: React.SFC<MySkillsProps> = ({}) => {
         </Heading>
         <Text
           color="gray.400"
-          maxW={["100%", "100%", "55%", "55%"]}
+          maxW={["100%", "100%", "100%", "100%", "55%", "55%"]}
           my="5"
           fontSize="md"
           lineHeight="1.3"

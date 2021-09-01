@@ -36,14 +36,21 @@ const Header: React.SFC<HeaderProps> = ({}) => {
       px={["2", "2", "10", "10"]}
       justifyContent="space-between"
       zIndex="15"
-      flexDir={["column", "column", "row", "row"]}
+      flexDir={["column", "column", "column", "column", "row", "row"]}
     >
       <Flex
         alignItems="center"
         userSelect="none"
         w="full"
-        py={["4", "4", "0", "0"]}
-        justifyContent={["center", "center", "left", "left"]}
+        py={["4", "4", "4", "4", "0", "0"]}
+        justifyContent={[
+          "center",
+          "center",
+          "center",
+          "center",
+          "left",
+          "left",
+        ]}
       >
         <Heading lineHeight="1" size="md">
           Ben Macleod
@@ -55,7 +62,14 @@ const Header: React.SFC<HeaderProps> = ({}) => {
       </Flex>
       <Flex
         alignItems="center"
-        justifyContent={["center", "center", "flex-end", "flex-end"]}
+        justifyContent={[
+          "center",
+          "center",
+          "center",
+          "center",
+          "flex-end",
+          "flex-end",
+        ]}
       >
         <Button
           onClick={() => scrollToElement("home")}

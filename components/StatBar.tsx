@@ -1,5 +1,6 @@
 import { Box, Flex, Icon, Text, Tooltip } from "@chakra-ui/react";
 import * as React from "react";
+import theme from "../_chakra/theme";
 
 export interface StatBarProps {
   label: string;
@@ -34,9 +35,10 @@ const StatBar: React.SFC<StatBarProps> = ({
     <Flex flexDir="column">
       <Flex
         width={[
-          `${width / 2.7}px`,
+          `${width / 1}px`,
+          `${width / 3}px`,
+          `${width / 2.5}px`,
           `${width / 2}px`,
-          `${width}px`,
           `${width}px`,
         ]}
         background="#1F2937"
@@ -51,8 +53,9 @@ const StatBar: React.SFC<StatBarProps> = ({
         <Flex
           width={[
             `${value * (width / 2.7)}px`,
+            `${value * (width / 3)}px`,
+            `${value * (width / 2.5)}px`,
             `${value * (width / 2)}px`,
-            `${value * width}px`,
             `${value * width}px`,
           ]}
           borderRightRadius="full"
@@ -69,7 +72,7 @@ const StatBar: React.SFC<StatBarProps> = ({
             lineHeight="1"
             pos="absolute"
             right="3"
-            display={["none", "none", "inherit", "inherit"]}
+            display={["none", "none", "none", "none", "inherit"]}
           >
             {level}
           </Text>
