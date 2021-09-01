@@ -4,13 +4,50 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    /* position: relative; */
 }
+
+body {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  /* position: relative !important; */
+  /* background-color: yellow !important; */
+}
+
+#__next {
+  /* position: relative; */
+  /* background-color: red; */
+}
+
+
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.blob { 
+  width: 500;
+  height: 500;
+  position: absolute;
+  /* left: -200px; */
+  top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8, %3Csvg width='100%25' height='100%25' viewBox='0 0 500 500' xmlns='http://www.w3.org/2000/svg' %3E %3Cdefs%3E %3ClinearGradient id='linearGradientId' gradientTransform='rotate(-45 0.5 0.5)'%3E %3Cstop offset='0%25' stop-color='%2308AEEA' /%3E %3Cstop offset='100%25' stop-color='%232AF598' /%3E %3C/linearGradient%3E %3CclipPath id='shape'%3E %3Cpath fill='currentColor' d='M881,658Q877,816,731,900Q585,984,448,905.5Q311,827,171.5,748.5Q32,670,56.5,508.5Q81,347,174.5,222.5Q268,98,413.5,130.5Q559,163,658,223.5Q757,284,821,392Q885,500,881,658Z'%3E%3C/path%3E %3C/clipPath%3E %3C/defs%3E %3Cg clip-path='url(%23shape)'%3E %3Cpath fill='url(%23linearGradientId)' d='M881,658Q877,816,731,900Q585,984,448,905.5Q311,827,171.5,748.5Q32,670,56.5,508.5Q81,347,174.5,222.5Q268,98,413.5,130.5Q559,163,658,223.5Q757,284,821,392Q885,500,881,658Z' /%3E %3C/g%3E %3C/svg%3E");
 }
