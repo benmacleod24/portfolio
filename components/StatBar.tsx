@@ -33,7 +33,7 @@ const StatBar: React.SFC<StatBarProps> = ({
   return (
     <Flex flexDir="column">
       <Flex
-        width={`${width}px`}
+        width={[`${width / 2}px`, `${width / 2}px`, `${width}px`, `${width}px`]}
         background="#1F2937"
         borderRadius="full"
         overflow="hidden"
@@ -44,7 +44,12 @@ const StatBar: React.SFC<StatBarProps> = ({
         boxShadow="xl"
       >
         <Flex
-          width={`${value * width}px`}
+          width={[
+            `${value * (width / 2)}px`,
+            `${value * (width / 2)}px`,
+            `${value * width}px`,
+            `${value * width}px`,
+          ]}
           borderRightRadius="full"
           h="full"
           background={color}
@@ -59,6 +64,7 @@ const StatBar: React.SFC<StatBarProps> = ({
             lineHeight="1"
             pos="absolute"
             right="3"
+            display={["none", "none", "inherit", "inherit"]}
           >
             {level}
           </Text>

@@ -13,6 +13,7 @@ const About: React.SFC<AboutProps> = ({}) => {
       pos="relative"
       zIndex={1}
       //   background="red"
+      mb={["32", "0", "0", "0"]}
     >
       <Image
         src="https://i.imgur.com/ZQYrr1s.png"
@@ -30,7 +31,7 @@ const About: React.SFC<AboutProps> = ({}) => {
         background="gray.700"
         p="10"
         boxShadow="2xl"
-        // zIndex={4}
+        zIndex={4}
       >
         <Heading mb="4" lineHeight="1" size="lg" color="whitesmoke" zIndex={2}>
           About Me
@@ -44,7 +45,11 @@ const About: React.SFC<AboutProps> = ({}) => {
         >
           Hello, Im Ben Macleod!
         </Text>
-        <Text maxWidth="75%" color="gray.400" lineHeight="1.3">
+        <Text
+          maxWidth={["100%", "100%", "75%", "75%"]}
+          color="gray.400"
+          lineHeight="1.3"
+        >
           I have been a web developer for nearly 2 years. During those two years
           I taught myself how to develop my web applications in multiple
           different frameworks & methods. During all this experiences I found

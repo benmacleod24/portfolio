@@ -33,11 +33,18 @@ const Header: React.SFC<HeaderProps> = ({}) => {
       pos="sticky"
       top="0"
       left="0"
-      px="10"
+      px={["2", "2", "10", "10"]}
       justifyContent="space-between"
-      zIndex="10"
+      zIndex="15"
+      flexDir={["column", "column", "row", "row"]}
     >
-      <Flex alignItems="center" userSelect="none">
+      <Flex
+        alignItems="center"
+        userSelect="none"
+        w="full"
+        py={["4", "4", "0", "0"]}
+        justifyContent={["center", "center", "left", "left"]}
+      >
         <Heading lineHeight="1" size="md">
           Ben Macleod
         </Heading>
@@ -46,7 +53,10 @@ const Header: React.SFC<HeaderProps> = ({}) => {
         </Text>
         <Text lineHeight="1">Web Developer</Text>
       </Flex>
-      <Flex alignItems="center">
+      <Flex
+        alignItems="center"
+        justifyContent={["center", "center", "flex-end", "flex-end"]}
+      >
         <Button
           onClick={() => scrollToElement("home")}
           fontWeight="normal"

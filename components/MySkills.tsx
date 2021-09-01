@@ -31,14 +31,27 @@ const MySkills: React.SFC<MySkillsProps> = ({}) => {
         <Heading lineHeight="1" size="lg" color="whitesmoke">
           My Skills & Languages
         </Heading>
-        <Text color="gray.400" maxW="55%" my="5" fontSize="sm" lineHeight="1.3">
+        <Text
+          color="gray.400"
+          maxW={["100%", "100%", "55%", "55%"]}
+          my="5"
+          fontSize="md"
+          lineHeight="1.3"
+        >
           I am a very well rounded developer with a vast knowledge of front-end
           and back-end languages. I am capable of creating a full stack website
           using React JS front-end coupled with a relational or document
           database. The framwork I am most interested in is Next JS; making all
           of my websites with this framework, and Prisma as my database client.
         </Text>
-        <Grid templateColumns="repeat(2, 1fr)">
+        <Grid
+          templateColumns={[
+            "repeat(1, 1fr)",
+            "repeat(1, 1fr)",
+            "repeat(2, 1fr)",
+            "repeat(2, 1fr)",
+          ]}
+        >
           <StatBar
             label="Typescript"
             stopValue={0.95}
