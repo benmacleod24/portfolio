@@ -66,7 +66,7 @@ const StatBar: React.SFC<StatBarProps> = ({
           pos="relative"
           alignItems="center"
         >
-          <Text
+          {/* <Text
             fontSize="sm"
             fontWeight="bold"
             lineHeight="1"
@@ -75,7 +75,7 @@ const StatBar: React.SFC<StatBarProps> = ({
             display={["none", "none", "none", "none", "inherit"]}
           >
             {level}
-          </Text>
+          </Text> */}
         </Flex>
         <Text
           fontSize="sm"

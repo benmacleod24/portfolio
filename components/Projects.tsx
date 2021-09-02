@@ -23,7 +23,7 @@ const Projects: React.SFC<ProjectsProps> = ({}) => {
         w="98%"
         m="auto"
         flexDir="column"
-        background="gray.700"
+        // background="gray.700"
         p="10"
         boxShadow="2xl"
       >
@@ -45,10 +45,11 @@ const Projects: React.SFC<ProjectsProps> = ({}) => {
             borderWidth="1px"
             borderRadius="lg"
             overflow="hidden"
+            background="gray.700"
           >
             <Image
               src="https://i.imgur.com/g0SePZl.png"
-              boxShadow="xl"
+              // boxShadow="xl"
               alt="image"
             />
             <Box p="5">
