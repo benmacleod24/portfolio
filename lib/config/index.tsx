@@ -25,11 +25,30 @@ const projects: TProject[] = [
 		title: "123soldteam Website",
 		technologies: ["TailwindCSS", "Next.js", "TypeScript", "Shadcn UI"],
 		description:
-			"Developed a website optimized for SEO and tailored to deliver the client's desired content effectively.",
+			"Assisted the 123soldteam in centralizing their information, enabling clients to access resources like guides, home values, client ratings, and more all in one place.",
 		links: [
 			{ href: "https://123soldteam.com", title: "Website", icon: Globe },
 		],
 		imageSrc: "/123soldteam.png",
+	},
+	{
+		title: "VendorLink",
+		technologies: [
+			"TailwindCSS",
+			"Next.js",
+			"TypeScript",
+			"Shadcn UI",
+			"C#",
+			".NET",
+			"Prisma",
+			"Postgres",
+		],
+		description:
+			"VendorLink is a vendor management platform for real estate agents, helping them find trusted vendors, share them with clients, and track business impact with analytical tools.",
+		links: [
+			{ href: "https://vendorl.ink", title: "Website", icon: Globe },
+		],
+		imageSrc: "/vendorlink.png",
 	},
 	{
 		title: "Job Application Manager",
@@ -52,19 +71,6 @@ const projects: TProject[] = [
 			},
 		],
 		imageSrc: "/jobmanager.png",
-	},
-	{
-		title: "Monty Hall Simulation",
-		technologies: ["Java", "Data Analysis"],
-		description: `Developed a terminal-based simulation in Java to validate the Monty Hall problem by simulating over 2,000 scenarios to statistically prove the advantage of switching doors. `,
-		links: [
-			{
-				href: "https://github.com/benmacleod24/montyhall-simulation",
-				title: "Github",
-				icon: Github,
-			},
-		],
-		imageSrc: "/montyhall.jpg",
 	},
 	{
 		title: "Python Blackjack",

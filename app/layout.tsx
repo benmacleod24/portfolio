@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Config } from "@/lib/config";
 import NavBar from "@/components/nav-bar";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
 	variable: "--font-sans",
@@ -69,6 +70,7 @@ export default function RootLayout({
 					<TooltipProvider delayDuration={0}>
 						<div className="flex flex-col space-y-10">
 							{children}
+							<Analytics />
 						</div>
 						<NavBar />
 					</TooltipProvider>
