@@ -11,6 +11,7 @@ export type TConfig = {
 	projects: TProject[];
 	navigation: TNavOptions[];
 	social: TSocial[];
+	skills: string[];
 };
 
 export type TEducation = {

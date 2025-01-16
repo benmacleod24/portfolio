@@ -6,7 +6,7 @@ export default function Projects() {
 	return (
 		<section id="projects">
 			<div className="space-y-12 w-full py-12">
-				<BlurFade delay={Config.animationDelay * 7}>
+				<BlurFade delay={Config.animationDelay * 9}>
 					<div className="flex flex-col items-center justify-center space-y-4 text-center">
 						<div className="space-y-2">
 							<div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
@@ -27,7 +27,7 @@ export default function Projects() {
 					{Config.projects.map((p, index) => (
 						<BlurFade
 							key={p.title}
-							delay={Config.animationDelay * 8 + index * 0.05}
+							delay={Config.animationDelay * 10 + index * 0.05}
 						>
 							<ProjectCard project={p} />
 						</BlurFade>

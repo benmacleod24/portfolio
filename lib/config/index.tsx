@@ -105,6 +105,23 @@ export const Config: TConfig = {
 			label: "Home",
 		},
 	],
+	skills: [
+		"TypeScript",
+		"C#",
+		"React",
+		"Next.js",
+		".NET",
+		"TailwindCSS",
+		"Shadcn UI",
+		"Postgres",
+		"MS SQL",
+		"MySQL",
+		"MongoDB",
+		"Prisma",
+		"Azure",
+		"Git",
+		"Docker",
+	],
 	social: [
 		{
 			href: "https://github.com/benmacleod24",
